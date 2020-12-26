@@ -33,36 +33,56 @@ export default class Main extends Component {
     });
   }
 
-  render() {
-    const { newTodo, tarefas } = this.state;
+   handleEdit = (e, index) => {
+     console.log('edit', index);
+   }
 
-    return (
-      <div className="main">
-        <h1>Todo List</h1>
+   handleDelete = (e, index) => {
+     const { tarefas } = this.state;
+     const newTodo = [...tarefas];
+     newTodo.splice(index, 1);
 
-        <form onSubmit={this.handleSubmit} action="#" className="form">
-          <input
-            onChange={this.handleChange}
-            type="text"
-            value={newTodo}
-          />
-          <button type="submit">
-            <FaPlus />
-          </button>
-        </form>
+     this.setState({
+       tarefas: [...newTodo],
+     });
+   }
 
-        <ul className="tarefas">
-          {tarefas.map((tarefa) => (
-            <li key={tarefa}>
-              {tarefa}
-              <span className="">
-                <FaEdit className="edit" />
-                <FaWindowClose className="delete" />
-              </span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    );
-  }
+   render() {
+     const { newTodo, tarefas } = this.state;
+
+     return (
+       <div className="main">
+         <h1>Todo List</h1>
+
+         <form onSubmit={this.handleSubmit} action="#" className="form">
+           <input
+             onChange={this.handleChange}
+             type="text"
+             value={newTodo}
+           />
+           <button type="submit">
+             <FaPlus />
+           </button>
+         </form>
+
+         <ul className="tarefas">
+           {tarefas.map((tarefa) => (
+             <li key={tarefa}>
+               {tarefa}
+               <span className="">
+                 <FaEdit
+                   onClick={(e, index) => this.handleEdit(e, index)}
+                   className="edit"
+                 />
+                 <FaWindowClose
+                   onClick={(e, index) => this.handleDelete(e, index)}
+                   className="delete"
+                 />
+               </span>
+             </li>
+           ))}
+         </ul>
+       </div>
+     );
+   }
 }
