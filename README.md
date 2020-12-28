@@ -5,7 +5,7 @@ Uma lista de tarefas feita em ReactJS!
 ![Todo List](https://github.com/Pedro-Murilo/todo-list/blob/master/Sem%20título.png)
 
 ## 🗒 Sobre
-Nesse projeto basicamente foi desenvolvido um CRUD, podemos criar, ler, editar e deletar as tarefas. 
+Nesse projeto basicamente foi desenvolvido um CRUD, podemos criar, ler, editar e deletar as tarefas. As tarefas também são salvas no LocalStorage do navegador!
 
 ## ⚙ Como testar o projeto:
 ### - Primeiro passo: 
