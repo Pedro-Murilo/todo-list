@@ -48,3 +48,8 @@ In this app I learned the basics of ReactJS creating a CRUD (Todo), I learned al
 > <strong>Step 4:</strong> Push to your branch: `git push origin your-branch`
 
 > <strong>Final:</strong> After merge your pull request, you can delete your branch
+
+
+---
+### 📄 License
+This project is under MIT license. See the [LICENSE](https://github.com/Pedro-Murilo/devfinance/blob/main/LICENSE) file for more details.
