@@ -12,6 +12,8 @@
   
   <img alt="Last Commit" src="https://img.shields.io/github/last-commit/pedro-murilo/todo-list?color=000&style=for-the-badge">
   
+  <img alt="License" src="https://img.shields.io/github/license/pedro-murilo/todo-list?color=000&style=for-the-badge"/>
+  
   <a href="https://github.com/Pedro-Murilo/">
     <img alt="Developed by Pedro" src="https://img.shields.io/badge/Dev-Pedro-%3498db?color=000&style=for-the-badge">
   </a>
