@@ -52,4 +52,4 @@ In this app I learned the basics of ReactJS creating a CRUD (Todo), I learned al
 
 ---
 ### 📄 License
-This project is under MIT license. See the [LICENSE](https://github.com/Pedro-Murilo/devfinance/blob/main/LICENSE) file for more details.
+This project is under MIT license. See the [LICENSE](https://github.com/Pedro-Murilo/todo-list/blob/main/LICENSE) file for more details.
